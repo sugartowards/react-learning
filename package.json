@@ -1,0 +1,17 @@
+{
+  "name": "react-resume",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dll": "webpack -p --config webpack.dll.config.js --progress --profile --colors",
+    "dist": "webpack --config webpack.dist.config.js --progress --colors",
+    "start": "webpack-dev-server --progress --colors",
+    "server": "node json-server.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.6.3"
+  }
+}
