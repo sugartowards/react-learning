@@ -37,10 +37,6 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new webpack.DllReferencePlugin({
             context: __dirname,
-            /**
-             下面这个地址对应webpack.dll.config.js中生成的那个json文件的路径
-             这样webpack打包时，就先直接去这个json文件中把那些预编译的资源弄进来
-             **/
             manifest: require('./assets/vendor-manifest.json')
         })
     ],
